@@ -1,73 +1,91 @@
-# Welcome to your Lovable project
+# 🚀 Linkbird.ai UI Replication - Internship Assignment
 
-## Project info
+![Next.js](https://img.shields.io/badge/Next.js-15+-black?logo=nextdotjs)  
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-3.x-38B2AC?logo=tailwind-css&logoColor=white)  
+![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-Components-blueviolet)  
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-4169E1?logo=postgresql&logoColor=white)  
+![Drizzle ORM](https://img.shields.io/badge/Drizzle-ORM-orange)  
+![TanStack Query](https://img.shields.io/badge/TanStack_Query-React_Query-red)  
+![Zustand](https://img.shields.io/badge/Zustand-State_Management-yellow)  
+![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?logo=vercel)  
 
-**URL**: https://lovable.dev/projects/96febb56-e0ae-45c5-bd39-5a4b438a15a3
+This project is built as part of the **[Internship] Kandid - Full Stack Developer Next.js Intern Assignment**.  
+It replicates the **Leads** and **Campaigns** sections of the Linkbird.ai platform with modern, responsive design and full functionality.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 📌 Features Implemented
 
-**Use Lovable**
+### 🔐 Authentication
+- Email/password registration & login
+- Google OAuth integration
+- Session management & logout
+- Protected routes with middleware
+- Responsive, clean auth UI with validation & error handling
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/96febb56-e0ae-45c5-bd39-5a4b438a15a3) and start prompting.
+### 🖥️ Application Layout & Navigation
+- Collapsible sidebar navigation (Dashboard, Leads, Campaigns, Settings)
+- Active state indicators
+- User profile with logout
+- Header with breadcrumbs
+- Consistent typography & spacing
 
-Changes made via Lovable will be committed automatically to this repo.
+### 📊 Leads Section
+- Infinitely scrollable leads table
+- Columns: Name, Email, Company, Campaign, Status, Last Contact
+- Search & filter functionality
+- Skeleton UI & loading states
+- Lead detail **side sheet**:
+  - Contact details, campaign info, interaction history
+  - Lead status progression
+  - Action buttons (Contact, Update Status)
+  - Smooth animations & close actions
 
-**Use your preferred IDE**
+### 🎯 Campaigns Section
+- Campaigns overview table
+- Columns: Name, Status, Total Leads, Successful Leads, Response Rate, Progress, Created Date, Actions
+- Sortable columns & status filters
+- Campaign statistics with progress bars & color-coded indicators
+- Summary cards showing overall metrics
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🛠️ Tech Stack
 
-Follow these steps:
+- **Next.js 15+** – React framework (App Router)
+- **Tailwind CSS + shadcn/ui** – Styling & UI components
+- **PostgreSQL + Drizzle ORM** – Database & type-safe ORM
+- **Better Auth** – Authentication (Email/Password + Google OAuth)
+- **TanStack Query (React Query)** – Server state management
+- **Zustand** – Client-side state management
+- **TypeScript** – Type safety & scalability
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🗄️ Database Schema
 
-# Step 3: Install the necessary dependencies.
-npm i
+- **Users** – Handled by Better Auth  
+- **Campaigns** – Stores campaign details & metrics  
+- **Leads** – Stores lead information, status, and associations  
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## ⚡ State Management
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- **Zustand** for UI & local states (sidebar, filters, modals)  
+- **TanStack Query** for data fetching, caching, infinite scrolling, and optimistic updates  
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🎨 UI/UX
 
-## What technologies are used for this project?
+- Matches **Linkbird.ai demo video** design
+- Uses **shadcn/ui** consistently
+- Hover states, transitions, and animations
+- **Dark/Light theme support** (bonus)
+- Fully responsive & accessible design
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📂 Project Structure
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/96febb56-e0ae-45c5-bd39-5a4b438a15a3) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
